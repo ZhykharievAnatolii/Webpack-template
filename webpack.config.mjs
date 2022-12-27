@@ -6,7 +6,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const webpackConfig={
     entry: './src/index.js',
     output: {
-
+        path: resolve(__dirname,'dist'),
+        filename: 'build.js'
     }
 };
 export default webpackConfig;
