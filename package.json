@@ -1,0 +1,27 @@
+{
+  "name": "webpack-template",
+  "version": "1.0.0",
+  "description": "first version of webpack template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhykharievAnatolii/Webpack-template.git"
+  },
+  "keywords": [
+    "webpack",
+    "template"
+  ],
+  "author": "zhykharievanatolii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhykharievAnatolii/Webpack-template/issues"
+  },
+  "homepage": "https://github.com/ZhykharievAnatolii/Webpack-template#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
