@@ -1,4 +1,4 @@
-import {resolve,dirname} from 'path';
+import {resolve,dirname,join} from 'path';
 import { fileURLToPath } from 'url';
 import HtmlWebpackPlugin from "html-webpack-plugin";
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -15,6 +15,12 @@ const webpackConfig={
     new HtmlWebpackPlugin({
         template:'./src/index.html'
     })
-    ]
+    ],
+    devServer: {
+        port:4021,
+        static:{
+            directory:join(__dirname,'src')
+        }
+    }
 };
 export default webpackConfig;
