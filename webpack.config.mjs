@@ -12,7 +12,9 @@ const webpackConfig={
         clean: true,
     },
     plugins: [
-
+    new HtmlWebpackPlugin({
+        template:'./src/index.html'
+    })
     ]
 };
 export default webpackConfig;
