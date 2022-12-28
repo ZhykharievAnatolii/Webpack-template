@@ -7,7 +7,8 @@ const webpackConfig={
     entry: './src/index.js',
     output: {
         path: resolve(__dirname,'dist'),
-        filename: 'build.js'
+        filename: 'build-[fullhash].js',
+        clean: true,
     }
 };
 export default webpackConfig;
