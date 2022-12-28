@@ -4,10 +4,8 @@ import {sum} from "./sum";
 
 document.addEventListener('DOMContentLoaded',()=>{
 
-    const firstInput=+prompt('Enter first number');
-
-    React.createElement('div',{children:'test'})
-    console.log(sum(firstInput,5));
+    React.createElement('div',{children:'test'});
+    alert('Hey all visitors!')
 });
 
 
