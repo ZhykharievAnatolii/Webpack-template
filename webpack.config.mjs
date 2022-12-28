@@ -1,6 +1,8 @@
 import {resolve,dirname,join} from 'path';
 import { fileURLToPath } from 'url';
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 // import {dirname} from 'path';
 
@@ -14,7 +16,10 @@ const webpackConfig={
     plugins: [
     new HtmlWebpackPlugin({
         template:'./src/index.html'
-    })
+    }),
+        new MiniCssExtractPlugin({
+            filename:'index-[fullhash].css'
+        })
     ],
     devServer: {
         port:4021,
@@ -26,7 +31,7 @@ const webpackConfig={
         rules: [
             {
                 test: /\.css$/i,
-                use: ["style-loader", "css-loader"],
+                use: [MiniCssExtractPlugin.loader, "css-loader"],
             }
         ]
     }
