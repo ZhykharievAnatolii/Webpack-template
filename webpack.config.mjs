@@ -18,7 +18,7 @@ const webpackConfig={
         template:'./src/index.html'
     }),
         new MiniCssExtractPlugin({
-            filename:'index-[fullhash].css'
+            filename:'[name]-[fullhash].css'
         })
     ],
     devServer: {

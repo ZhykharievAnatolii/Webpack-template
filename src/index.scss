@@ -1,11 +1,11 @@
-$color:blue;
-
-@mixin flex{
-  display: flex;
-  justify-content: space-between;
-}
-
-body{
-  @include flex;
-background-color: $color;
-}
+//$color:blue;
+//
+//@mixin flex{
+//  display: flex;
+//  justify-content: space-between;
+//}
+//
+//body{
+//  @include flex;
+//background-color: $color;
+//}
