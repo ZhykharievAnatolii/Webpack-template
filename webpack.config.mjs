@@ -27,6 +27,7 @@ const webpackConfig={
             directory:join(__dirname,'src')
         }
     },
+    devtool: 'inline-source-map',
     module:{
         rules: [
             {
